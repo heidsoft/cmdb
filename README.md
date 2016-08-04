@@ -1,5 +1,9 @@
 django cmdb and salt ui
 
+sudo python manage.py runserver 0.0.0.0:9999
+
+
+
 效果图如下
 ===
 ![sec](http://blog.kukafei520.net/wp-content/uploads/2016/01/cmdb1.jpg)
