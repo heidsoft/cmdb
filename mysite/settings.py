@@ -231,10 +231,12 @@ salt_config = "%s/mysite/%s" % (django_path, "salt_webconfig.py")
 # connect('config_center')
 ops_mail = "songxs@fun.tv"
 
+"""
 if os.path.isfile(localhost_path):
     from localhost import *
 else:
-    from prod import *
+"""
+from prod import *
 
 # BOOTSTRAP3 = {
 #     'horizontal_label_class': 'col-md-3',

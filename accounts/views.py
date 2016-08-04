@@ -13,14 +13,15 @@ from cmdb_auth.no_auth import check_auth
 import json
 import hashlib
 import time
-from mysite.settings import auth_key, EMAIL_PUSH
+"""from mysite.settings import auth_key, EMAIL_PUSH"""
 from django.core.mail import send_mail
 from forms import AuthNodeForm
 import uuid
 import random
 from users.models import cmdb_uuid
 
-
+EMAIL_PUSH=True
+auth_key="123456"
 def register(request):
     status = check_auth(request, "add_user")
     if not status:
